@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.Hover to clear a blur image</title>
+    <style>
+      body {
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      h1 {
+        font-size: 400%;
+      }
+      img {
+        border: 2px solid black;
+        width: 50%;
+        filter: blur(1rem);
+        height: 100%;
+      }
+      img:hover {
+        filter: blur();
+        transition: 0.9s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <u>Hover To Reveal The Image</u>
+    </h1>
+    <img
+      src="https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/1432fedb88c0d1cc56f4c496a80f251c.jpg"
+      alt="Bangalore View"
+    />
+  </body>
+</html>
